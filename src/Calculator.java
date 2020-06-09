@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Calculadora {
+public class Calculator {
     private JTextField resultado;
     private JButton boton4;
     private JPanel Panel;
@@ -25,7 +25,7 @@ public class Calculadora {
     int numero2=0;
     int operacion;
 
-    public Calculadora() {
+    public Calculator() {
 
         boton0.addActionListener(new ActionListener() {
             @Override
@@ -140,7 +140,7 @@ public class Calculadora {
 
     public static void main(String[] args){
         JFrame frame = new JFrame("Calculator");
-        frame.setContentPane(new Calculadora().Panel);
+        frame.setContentPane(new Calculator().Panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
